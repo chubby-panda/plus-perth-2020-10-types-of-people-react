@@ -17,6 +17,7 @@ import DeleteEventPage from "./pages/DeleteEventPage";
 import FilterEventsPage from "./pages/FilterEventPage";
 import PasswordPage from "./pages/PasswordPage";
 import MentorAttendedPage from "./pages/MentorAttendedPage";
+import AddEventImagePage from "./pages/AddEventImagePage"
 
 function App() {
     return (
@@ -38,6 +39,9 @@ function App() {
                 </Route>
                 <Route path="/events/:id/delete">
                     <DeleteEventPage />
+                </Route>
+                <Route path="/events/:id/images">
+                    <AddEventImagePage />
                 </Route>
                 <Route path="/events/:id">
                     <EventPage />
