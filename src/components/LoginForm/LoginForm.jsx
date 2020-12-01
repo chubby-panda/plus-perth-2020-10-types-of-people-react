@@ -42,12 +42,12 @@ const LoginForm = () => {
                         "username",
                         credentials.username
                     );
+                    console.log(response);
                     history.push("/");
                 }
             });
         }
     };
-
 
     return (
         <form className="form">

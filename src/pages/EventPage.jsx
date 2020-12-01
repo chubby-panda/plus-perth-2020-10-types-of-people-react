@@ -139,6 +139,12 @@ const EventPage = () => {
                                     >
                                         <p>Delete</p>
                                     </Link>
+                                    <Link
+                                        className="owner-link"
+                                        to={`/events/${id}/images`}
+                                    >
+                                        <p>Update Image</p>
+                                    </Link>
                                 </div>
                             )}
                             <h1>{eventData.event_name}</h1>
