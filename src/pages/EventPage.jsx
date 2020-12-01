@@ -119,7 +119,7 @@ const EventPage = () => {
 
     return (
         <>
-            {isBusy ? (
+            {isBusy ? ( 
                 <img id="spinner-img" src={logo} alt="loading..." />
             ) : (
                 <div id="event-page" className="container">

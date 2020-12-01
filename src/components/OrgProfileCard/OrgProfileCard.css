@@ -1,10 +1,13 @@
-#o-profile-section-1 {
+#o-profile-sections-1-2 {
     display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--grey-color);
+    padding: 20px;
 }
 
 #o-profile-left,
 #o-profile-right {
-    width: 50%;
+    width: 100%;
 }
 
 #o-profile-left {
@@ -15,17 +18,13 @@
 #o-profile-right {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    align-items: center;
 }
 
 #o-profile-image {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
-}
-
-#o-profile-section-2 {
-    text-align: justify;
 }
 
 #o-profile-section-2,
@@ -44,13 +43,7 @@
 @media only screen and (min-width: 700px) {
     #o-profile-sections-1-2 {
         display: flex;
-        background-color: var(--grey-color);
-        padding: 20px;
-    }
-
-    #o-profile-section-1,
-    #o-profile-section-2 {
-        width: 50%;
+        flex-direction: row;
     }
 
     #o-profile-left,

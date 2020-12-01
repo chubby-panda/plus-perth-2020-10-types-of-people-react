@@ -115,7 +115,6 @@ const MentorProfileCard = ({ userData }) => {
                                         />
                                     </div>
                                     <div id="m-profile-right">
-                                        <IsOwnerCanEdit />
                                         <h1>
                                             {mentor_profile.name} (
                                             {mentor_profile.username})
@@ -125,6 +124,8 @@ const MentorProfileCard = ({ userData }) => {
                                         <p>
                                             Location: {mentor_profile.location}
                                         </p>
+                                        <br />
+                                        <IsOwnerCanEdit />
                                         <div>
                                             {mentor_profile.skills != null &&
                                                 retrieveIcons(

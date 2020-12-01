@@ -37,13 +37,14 @@
 #event-page {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     background-color: var(--grey-color);
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
+    width: 100%;
 }
 
 #event-page section {
     display: flex;
+    flex-direction: column;
 }
 
 #event-page-left {
@@ -264,6 +265,14 @@
 
     #header-right img {
         align-self: flex-end;
+    }
+
+    #event-page {
+        align-items: flex-start;
+    }
+
+    #event-page section {
+        flex-direction: row;
     }
 
     .event-grid {
