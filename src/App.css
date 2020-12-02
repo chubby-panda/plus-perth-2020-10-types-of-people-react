@@ -184,6 +184,7 @@
     display: flex;
     align-items: center;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .mentor-icons i {
