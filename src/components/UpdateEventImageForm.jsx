@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const UpdateEventImageForm = ({ eventData, eventImageData }) => {
     const [successMessage, setSuccessMessage] = useState();
@@ -44,6 +44,7 @@ const UpdateEventImageForm = ({ eventData, eventImageData }) => {
 
     return (
         <div id="update-event-image-form">
+            <Link to={`/events/${eventData.id}`}>Back to event</Link>
             <form>
                 <div className="form-input">
                     <label htmlFor="image">Image</label>

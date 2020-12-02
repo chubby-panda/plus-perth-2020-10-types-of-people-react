@@ -215,7 +215,8 @@
     margin-right: 10px;
 }
 
-#update-event-image-form img {
+#update-event-image-form img,
+#post-event-image-form img {
     width: 500px;
     height: 350px;
     object-fit: cover;
