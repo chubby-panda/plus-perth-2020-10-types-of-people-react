@@ -20,9 +20,6 @@ const EventCard = (event) => {
         setLoading(false);
     }, []);
 
-    console.log(event);
-    console.log(images);
-
     if (images == undefined) {
         return (
             <Link to={`/events/${event.eventData.id}`}>
@@ -55,10 +52,12 @@ const EventCard = (event) => {
             <Link to={`/events/${event.eventData.id}`}>
                 <div id="event-card">
                     <div id="event-card-image">
-                        <img
-                            src={images[0].image}
-                            alt={event.eventData.event_name}
-                        />
+                        {images[0] != null && (
+                            <img
+                                src={images[0].image}
+                                alt={event.eventData.event_name}
+                            />
+                        )}
                     </div>
                     <div id="event-card-text">
                         <h5>
