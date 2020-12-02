@@ -179,6 +179,17 @@
     margin-top: 20px;
 }
 
+.mentor-icons {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mentor-icons i {
+    margin-right: 10px;
+}
+
 .icons p {
     color: var(--white-color);
     display: inline;

@@ -126,7 +126,7 @@ const MentorProfileCard = ({ userData }) => {
                                         </p>
                                         <br />
                                         <IsOwnerCanEdit />
-                                        <div>
+                                        <div className="mentor-icons">
                                             {mentor_profile.skills != null &&
                                                 retrieveIcons(
                                                     mentor_profile.skills
