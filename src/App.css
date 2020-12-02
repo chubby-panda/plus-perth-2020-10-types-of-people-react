@@ -276,6 +276,10 @@
         flex-direction: row;
     }
 
+    #event-page-image img {
+        width: 90%;
+    }
+
     .event-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
